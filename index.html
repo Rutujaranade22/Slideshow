@@ -45,23 +45,29 @@
         .next:hover {
             transform: scale(0.8) translateX(10px);
         }
+        .center{
+            text-align: center;
+            color: blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="./img/animal1.jpg" class="slide" id="slide">
-        <img src="./img/back.png" class=" action back" onclick="back()">
-        <img src="./img/next.png" class="action next" onclick="next()">
-    </div>
+        <img src="./img/sun.avif" class="slide" id="slide">
+        <img src="./img/left-arrow.png" class=" action back" onclick="back()">
+        <img src="./img/next-button.png" class="action next" onclick="next()">
+        <h1 class="center">Planet</h1>
 
-    <script>
+    </div>
+     <script>
         const img = [
-            "img/animal1.jpg",
-            "img/animal2.jpg",
-            "img/animal3.jpg",
-            "img/baloon.jpg",
-            "img/cakeimg1.jpg"
+            "img/mercury.avif",
+            "img/venus.avif",
+            "img/mars.jpg",
+            "img/jupiter.avif",
+            "img/saturn.avif"
         ];
         let index = 0; 
         const slide = document.getElementById('slide');
